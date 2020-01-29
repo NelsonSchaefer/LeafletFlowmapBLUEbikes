@@ -1,0 +1,26 @@
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+	
+	.description {
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+	background: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	}
+	
+	.description h1 {
+    margin: 0 0 0px;
+    color: black;
+	font: Arial, Helvetica, sans-serif;
+	}
+
