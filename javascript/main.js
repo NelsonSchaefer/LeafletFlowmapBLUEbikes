@@ -54,7 +54,7 @@ function onEachStation(feature, layer){
 	layer.bindTooltip('Station ' +
     feature.properties.Name)};
 
-	var filepath = 'data/201905-bluebikes-tripdata_alt.csv';
+	var filepath = 'data/201905-bluebikes-tripdata_alt.CSV';
 
 	Papa.parse(filepath, {
       download: true,
