@@ -54,7 +54,7 @@
 
 	//use function from PapaParse Library to parse the .csv file
 	//create a 'geoJsonFeatureCollection' with all bike station points
-	Papa.parse('data/201905-bluebikes-tripdata_alt.csv', {
+	Papa.parse('data/201905-bluebikes-tripdata_alt.CSV', {
       download: true,
       header: true,
       dynamicTyping: true,
