@@ -5,11 +5,11 @@ It uses [LeafletJS](https://leafletjs.com/) as a basis and creates flow lines us
 
 ![](title_image.png)
 
-#THE MAP
+# THE MAP
 
-#ADDITIONAL PLUGINS
+# ADDITIONAL PLUGINS
 
-#THE DATA
+# THE DATA
 
 
 This site was built using [GitHub Pages](https://nelsonschaefer.github.io/LeafletFlowmapBLUEbikes/).
