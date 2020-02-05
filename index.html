@@ -4,44 +4,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <meta name="description" content="Canvas Flowmap Layer with LeafletJS." />
 
   <title>BLUEbikes Flowmap</title>
-
+  <!--- -->
+  <!--- link to stylesheets of leaflet and plugins -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="leaflet/leaflet.css" />
-  
   <link rel="stylesheet" href="plugins/leaflet-sidebar.css" />
-  <!--IMMER AN LETZTER STELLE: Einbinden vom eigenen Stylesheet. Wichtig,dass nach leafletdateien platziert-->
+  <!--- link to own stylesheet -->
   <link rel="stylesheet" href="css/mycss.css" type="text/css" />
-
-		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-
 </head>
 
 <body>
-    <!-- optionally define the sidebar content via HTML markup -->
+    <!-- content of the sidebar plugin -->
     <div id="sidebar" class="leaflet-sidebar collapsed">
-
         <!-- nav tabs -->
         <div class="leaflet-sidebar-tabs">
             <!-- top aligned tabs -->
             <ul role="tablist">
                 <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
                 <li><a href="#autopan" role="tab"><i class="fa fa-arrows"></i></a></li>
-            </ul>
-
-            
-        </div>
-
+            </ul>   
+        </div
         <!-- panel content -->
         <div class="leaflet-sidebar-content">
             <div class="leaflet-sidebar-pane" id="home">
                 <h1 class="leaflet-sidebar-header">
-                    
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
 				
+				<!-- content of the sidebar including two canvas elements for the charts -->
 				<h2>BLUEbikes trip data in May 2019</h2>
 				<p style="font-size:120%;">Bluebikes, is a bicycle sharing system in the Boston, Massachusetts metropolitan area.</p>
 				<p style="font-size:120%;">Since the launch of the service in 2011 rich system data has been made available to the public free of charge. </p>
@@ -61,49 +53,37 @@
 				Course: Geovisualization and Advanced Cartography<br/>
 				Copernicus Master in Digital Earth<br/>
 				University of Salzburg	
-				</span>
-
-
+				</span>	
 			</div>
-			
-
-
-
-
-
-
-
         </div>
     </div>
+	
+  <!-- map -->	
   <div id="map"></div>
-
-  <!-- first load LeafletJS -->
-
-  		<script src="leaflet/leaflet-src.js"></script>
-
-  <!-- load Esri Leaflet because we want to use an Esri basemap -->
-  <script src="https://unpkg.com/esri-leaflet@2.3/dist/esri-leaflet.js"></script>
-
-  <!-- load animation tweening lib requirement for CanvasFlowMapLayer -->
-  <script src="https://unpkg.com/@tweenjs/tween.js@18.5/dist/tween.umd.js"></script>
-
-  <!-- then load CanvasFlowMapLayer -->
-  <script src="plugins/CanvasFlowmapLayer.js"></script>
   
+  <!-- link to javascripts needed for leaflet and plugins -->
+  <!-- ChartJS library-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- LeafletJS -->
+  <script src="leaflet/leaflet-src.js"></script>
+  <!-- Esri Leaflet to use Esri basemap -->
+  <script src="https://unpkg.com/esri-leaflet@2.3/dist/esri-leaflet.js"></script>
+  <!--  animation tweening lib requirement for CanvasFlowMapLayer -->
+  <script src="https://unpkg.com/@tweenjs/tween.js@18.5/dist/tween.umd.js"></script>
+  <!--  CanvasFlowMapLayer -->
+  <script src="plugins/CanvasFlowmapLayer.js"></script>
+  <!-- Leaflet sidebar plugin -->
   <script src="plugins/leaflet-sidebar.js"></script>
-
-
-  <!-- also load 3rd-party CSV parsing libary just for this demo  -->
+  <!-- CSV parsing libary -->
   <script src="https://unpkg.com/papaparse@5.1/papaparse.min.js"></script>
   
-    <!--link to the files that contain geojson data-->
+  
+  <!--link to the files that contain geojson data-->
   <script src="data/BLUEbikesStations.js" type="text/javascript"> </script>
   
-  <!-- Einbinden der eigenen JavaScript-Datei NACH dem Kartencontainer-->
+  <!-- link to own JavaScript file-->
   <script src="javascript/main.js" type="text/javascript" media="screen"></script>
   
-
-
 </body>
 
 </html>
