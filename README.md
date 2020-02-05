@@ -5,11 +5,9 @@ It uses [LeafletJS](https://leafletjs.com/) as a basis and creates flow lines us
 
 ![](title_image.png)
 
-# THE MAP
+[See the application in action here](https://nelsonschaefer.github.io/LeafletFlowmapBLUEbikes/)!
 
-# ADDITIONAL PLUGINS
+# the map
+The web map application shows bike sharing stations and the routes taken between them. A click on a station lets you see all stations that were used as a destination from this very starting point.
 
-# THE DATA
 
-
-This site was built using [GitHub Pages](https://nelsonschaefer.github.io/LeafletFlowmapBLUEbikes/).
